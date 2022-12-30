@@ -1,0 +1,261 @@
+appVersion: 1.0.0.0, resVersion: 1.0.0.0
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "8AC97B2A1DF8086545A73A0A1001B6DF",
+                "size": 898895,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 1
+
+开始下载: resVersion: 1.0.0.1, md5: 8AC97B2A1DF8086545A73A0A1001B6DF, size: 898895, url: http://49.235.191.98:80/res_1.0.0.1.zip
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: False
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+MD5校验不通过，重新下载
+
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8AC97B2A1DF8086545A73A0A1001B6DF
+
+response.StatusCode: OK
+

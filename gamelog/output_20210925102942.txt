@@ -1,0 +1,66 @@
+appVersion: 1.0.0.2, resVersion: 1.0.0.2
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			
+            {
+                "resVersion": "1.0.0.2",
+                "md5": "eeb0f2096ed94ea50ede47491fa1fb62",
+                "size": 896137,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "71da3959e6552461ca145e9c92bc4bac",
+                "size": 1792693,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+10:29:43.334-1: Init lua state cost: 0.09585428
+
+10:29:43.523-1: Register lua type cost time: 0.1815004
+
+10:29:43.532-1: LuaState start
+
+10:29:43.551-1: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+10:29:43.552-1: [tolua.lua:12]:os: Windows, arch: x64
+
+10:29:43.595-1: [Main.lua:3]:logic start
+
+LuaFileList done
+
+Network.Start!!
+
+10:29:45.957-1: Type BasePanel not wrap to lua, push as UnityEngine.MonoBehaviour, the warning is only raised once
+
+Game.OnInitOK--->>>
+
+10:30:09.602-507: [LuaManager.cs:6]:Connect EmmyLua=true
+
+10:30:15.300-675: [LuaManager.cs:6]:Connect EmmyLua=true
+
+~NetworkManager was destroy
+
+Unload Network...
+
+10:39:39.567-0: LuaState destroy
+
+~GameManager was destroyed
+
+Assets\LuaFramework\Editor\CustomSettings.cs(11,7): warning CS0105: The using directive for 'UnityEngine.UI' appeared previously in this namespace
+
+Assets\LuaFramework\Editor\CustomSettings.cs(112,20): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+

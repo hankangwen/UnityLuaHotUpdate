@@ -1,0 +1,76 @@
+appVersion: 1.0.0.1, resVersion: 1.0.0.1
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "8AC97B2A1DF8086545A73A0A1001B6DF",
+                "size": 898895,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+09:43:10.126-1: Init lua state cost: 0.07623935
+
+09:43:10.305-1: Register lua type cost time: 0.1709695
+
+GetAssetBundle Error, not contains: lua_update.bundle
+UnityEngine.Debug:LogError (object)
+ResourceMgr:GetAssetBundle (string) (at Assets/Scripts/Logic/Resources/ResourceMgr.cs:128)
+LuaFramework.LuaManager:InitLuaBundle () (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:84)
+LuaFramework.LuaManager:InitStart () (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:25)
+LuaFramework.GameManager:OnInitialize () (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:37)
+LuaFramework.GameManager:Init () (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:31)
+LuaFramework.GameManager:Awake () (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:19)
+UnityEngine.GameObject:AddComponent<LuaFramework.GameManager> ()
+Facade:AddManager<LuaFramework.GameManager> (string) (at Assets/LuaFramework/Scripts/Framework/Core/Facade.cs:87)
+AppFacade:StartUp () (at Assets/LuaFramework/Scripts/Framework/AppFacade.cs:45)
+Main:AfterHotUpdate () (at Assets/Scripts/Main.cs:39)
+Main:<Awake>b__0_0 () (at Assets/Scripts/Main.cs:23)
+UpdatePanel:Finish () (at Assets/Scripts/View/UI/UpdatePanel.cs:154)
+UpdatePanel:NothingUpdate () (at Assets/Scripts/View/UI/UpdatePanel.cs:111)
+HotUpdater:Start () (at Assets/Scripts/Logic/HotUpdate/HotUpdater.cs:122)
+UpdatePanel:Start () (at Assets/Scripts/View/UI/UpdatePanel.cs:66)
+
+
+LuaLoader.AddBundle: lua.bundle
+
+09:43:10.317-1: LuaState start
+
+09:43:10.323-1: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+09:43:10.324-1: [tolua.lua:12]:os: Windows, arch: x64
+
+09:43:10.338-1: [Main.lua:3]:logic start
+
+LuaFileList done
+
+Network.Start!!
+
+09:43:10.376-1: Type BasePanel not wrap to lua, push as UnityEngine.MonoBehaviour, the warning is only raised once
+
+Game.OnInitOK--->>>
+
+~NetworkManager was destroy
+
+Unload Network...
+
+09:44:25.154-0: LuaState destroy
+
+~GameManager was destroyed
+
+Assets\LuaFramework\Editor\CustomSettings.cs(11,7): warning CS0105: The using directive for 'UnityEngine.UI' appeared previously in this namespace
+
+Assets\LuaFramework\Editor\CustomSettings.cs(112,20): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+

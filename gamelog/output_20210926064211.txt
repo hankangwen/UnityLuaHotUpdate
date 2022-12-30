@@ -1,0 +1,58 @@
+appVersion: 1.0.0.2, resVersion: 1.0.0.2
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			
+            {
+                "resVersion": "1.0.0.2",
+                "md5": "eeb0f2096ed94ea50ede47491fa1fb62",
+                "size": 896137,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "71da3959e6552461ca145e9c92bc4bac",
+                "size": 1792693,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+18:42:11.896-1: Init lua state cost: 0.08934689
+
+18:42:12.82-1: Register lua type cost time: 0.1795468
+
+18:42:12.92-1: LuaState start
+
+18:42:12.102-1: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+18:42:12.103-1: [tolua.lua:12]:os: Windows, arch: x64
+
+18:42:12.126-1: [Main.lua:3]:logic start
+
+LuaFileList done
+
+Network.Start!!
+
+18:42:14.506-1: Type BasePanel not wrap to lua, push as UnityEngine.MonoBehaviour, the warning is only raised once
+
+Game.OnInitOK--->>>
+
+~NetworkManager was destroy
+
+Unload Network...
+
+18:47:08.940-0: LuaState destroy
+
+~GameManager was destroyed
+

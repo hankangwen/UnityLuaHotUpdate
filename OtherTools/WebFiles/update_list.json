@@ -1,0 +1,22 @@
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			
+            {
+                "resVersion": "1.0.0.2",
+                "md5": "eeb0f2096ed94ea50ede47491fa1fb62",
+                "size": 896137,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "71da3959e6552461ca145e9c92bc4bac",
+                "size": 1792693,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]

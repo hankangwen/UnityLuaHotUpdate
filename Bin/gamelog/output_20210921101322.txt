@@ -1,0 +1,96 @@
+appVersion: 1.0.0.0, resVersion: 1.0.0.0
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			{
+                "resVersion": "1.0.0.2",
+                "md5": "c0161ad6fe11ef2004669d435d8f13c9",
+                "size": 895857,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "8ac97b2a1df8086545a73a0a1001b6df",
+                "size": 898895,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 2
+
+开始下载: resVersion: 1.0.0.1, md5: 8ac97b2a1df8086545a73a0a1001b6df, size: 898895, url: http://49.235.191.98:80/res_1.0.0.1.zip
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8ac97b2a1df8086545a73a0a1001b6df
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.1.zip
+
+MD5校验，ok: True
+
+解压文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8ac97b2a1df8086545a73a0a1001b6df
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/8ac97b2a1df8086545a73a0a1001b6df
+
+更新本地缓存版本号：1.0.0.1
+
+开始下载: resVersion: 1.0.0.2, md5: c0161ad6fe11ef2004669d435d8f13c9, size: 895857, url: http://49.235.191.98:80/res_1.0.0.2.zip
+
+Downloader Start, savePath: C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/c0161ad6fe11ef2004669d435d8f13c9
+
+response.StatusCode: OK
+
+下载完毕: http://49.235.191.98:80/res_1.0.0.2.zip
+
+MD5校验，ok: True
+
+解压文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/c0161ad6fe11ef2004669d435d8f13c9
+
+删除文件：C:/Users/hankangwen/AppData/LocalLow/linxinfa/game/c0161ad6fe11ef2004669d435d8f13c9
+
+更新本地缓存版本号：1.0.0.2
+
+全部热更包下载完毕
+
+AfterHotUpdate
+
+10:13:37.179-109: Init lua state cost: 0.07518387
+
+10:13:37.370-109: Register lua type cost time: 0.1848907
+
+GetAssetBundle Error, not contains: lua_update.bundle
+
+
+LuaLoader.AddBundle: lua.bundle
+
+10:13:37.380-109: LuaState start
+
+10:13:37.387-109: ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+10:13:37.387-109: os: Windows, arch: x86
+
+10:13:37.401-109: logic start
+
+LuaFileList done
+
+Network.Start!!
+
+10:13:37.443-109: Type BasePanel not wrap to lua, push as UnityEngine.MonoBehaviour, the warning is only raised once
+
+Game.OnInitOK--->>>
+
+~NetworkManager was destroy
+
+Unload Network...
+
+10:13:52.86-532: LuaState destroy
+
+~GameManager was destroyed
+

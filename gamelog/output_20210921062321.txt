@@ -1,0 +1,64 @@
+appVersion: 1.0.0.2, resVersion: 1.0.0.2
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			
+            {
+                "resVersion": "1.0.0.2",
+                "md5": "eeb0f2096ed94ea50ede47491fa1fb62",
+                "size": 896137,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "71da3959e6552461ca145e9c92bc4bac",
+                "size": 1792693,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+18:23:22.373-1: Init lua state cost: 0.1379867
+
+18:23:22.589-1: Register lua type cost time: 0.2081785
+
+18:23:22.600-1: LuaState start
+
+18:23:22.605-1: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+18:23:22.606-1: [tolua.lua:12]:os: Windows, arch: x64
+
+18:23:22.624-1: [Main.lua:3]:logic start
+
+LuaFileList done
+
+Network.Start!!
+
+18:23:22.691-1: Type BasePanel not wrap to lua, push as UnityEngine.MonoBehaviour, the warning is only raised once
+
+Game.OnInitOK--->>>
+
+18:24:26.150-36: [View/LoginPanel.lua:19]:Print2
+
+~NetworkManager was destroy
+
+Unload Network...
+
+18:24:29.828-0: LuaState destroy
+
+~GameManager was destroyed
+
+Assets\LuaFramework\Editor\CustomSettings.cs(11,7): warning CS0105: The using directive for 'UnityEngine.UI' appeared previously in this namespace
+
+Assets\LuaFramework\Editor\CustomSettings.cs(112,20): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+

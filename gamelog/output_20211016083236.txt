@@ -1,0 +1,85 @@
+appVersion: 1.0.0.2, resVersion: 1.0.0.2
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			
+            {
+                "resVersion": "1.0.0.2",
+                "md5": "eeb0f2096ed94ea50ede47491fa1fb62",
+                "size": 896137,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "71da3959e6552461ca145e9c92bc4bac",
+                "size": 1792693,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+20:32:37.347-1: Init lua state cost: 0.09702682
+
+20:32:37.529-1: Register lua type cost time: 0.1760416
+
+20:32:37.541-1: LuaState start
+
+20:32:37.555-1: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+20:32:37.555-1: [tolua.lua:12]:os: Windows, arch: x64
+
+LuaException: [string "LuaManager.cs"]:2: '(' expected near 'print'
+LuaInterface.LuaState:LuaLoadBuffer(Byte[], String) (at Assets/LuaFramework/ToLua/Core/LuaState.cs:2190)
+LuaInterface.LuaState:DoString(String, String) (at Assets/LuaFramework/ToLua/Core/LuaState.cs:608)
+LuaFramework.LuaManager:OverrideLuaPrint() (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:74)
+LuaFramework.LuaManager:StartMain() (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:48)
+LuaFramework.LuaManager:InitStart() (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:27)
+LuaFramework.GameManager:OnInitialize() (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:37)
+LuaFramework.GameManager:Init() (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:31)
+LuaFramework.GameManager:Awake() (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:19)
+UnityEngine.GameObject:AddComponent()
+Facade:AddManager(String) (at Assets/LuaFramework/Scripts/Framework/Core/Facade.cs:87)
+AppFacade:StartUp() (at Assets/LuaFramework/Scripts/Framework/AppFacade.cs:45)
+Main:AfterHotUpdate() (at Assets/Scripts/Main.cs:39)
+Main:<Awake>b__0_0() (at Assets/Scripts/Main.cs:23)
+UpdatePanel:Finish() (at Assets/Scripts/View/UI/UpdatePanel.cs:154)
+UpdatePanel:NothingUpdate() (at Assets/Scripts/View/UI/UpdatePanel.cs:111)
+HotUpdater:Start() (at Assets/Scripts/Logic/HotUpdate/HotUpdater.cs:122)
+UpdatePanel:Start() (at Assets/Scripts/View/UI/UpdatePanel.cs:66)
+UnityEngine.GameObject:AddComponent()
+Facade:AddManager(String) (at Assets/LuaFramework/Scripts/Framework/Core/Facade.cs:87)
+AppFacade:StartUp() (at Assets/LuaFramework/Scripts/Framework/AppFacade.cs:45)
+Main:AfterHotUpdate() (at Assets/Scripts/Main.cs:39)
+Main:<Awake>b__0_0() (at Assets/Scripts/Main.cs:23)
+UpdatePanel:Finish() (at Assets/Scripts/View/UI/UpdatePanel.cs:154)
+UpdatePanel:NothingUpdate() (at Assets/Scripts/View/UI/UpdatePanel.cs:111)
+HotUpdater:Start() (at Assets/Scripts/Logic/HotUpdate/HotUpdater.cs:122)
+UpdatePanel:Start() (at Assets/Scripts/View/UI/UpdatePanel.cs:66)
+
+
+~NetworkManager was destroy
+
+20:32:44.124-0: Lua function Network.Unload not exists
+
+NullReferenceException: Object reference not set to an instance of an object
+LuaFramework.LuaManager.Close () (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:164)
+LuaFramework.GameManager.OnDestroy () (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:58)
+
+
+A meta data file (.meta) exists but its folder 'Assets/Editor/Custom/LuaLogRe' can't be found, and has been created. Empty directories cannot be stored in version control, so it's assumed that the meta data file is for an empty directory in version control. When moving or deleting folders outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+
+GUID [63aa74993ed37524f9dff25b37c2a5d2] for asset 'Assets/Editor/Custom/LuaLogRe' conflicts with:
+  'Assets/Editor/Custom/LuaLogRedirect' (current owner)
+Assigning a new guid.
+
+

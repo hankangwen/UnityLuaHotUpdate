@@ -1,0 +1,83 @@
+appVersion: 1.0.0.2, resVersion: 1.0.0.2
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			
+            {
+                "resVersion": "1.0.0.2",
+                "md5": "eeb0f2096ed94ea50ede47491fa1fb62",
+                "size": 896137,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "71da3959e6552461ca145e9c92bc4bac",
+                "size": 1792693,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+11:42:18.545-1: Init lua state cost: 0.07973528
+
+11:42:18.728-1: Register lua type cost time: 0.1760168
+
+11:42:18.737-1: LuaState start
+
+11:42:18.740-1: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+11:42:18.741-1: [tolua.lua:12]:os: Windows, arch: x64
+
+11:42:18.755-1: [Main.lua:3]:logic start
+
+LuaException: Main.lua:11: attempt to concatenate local 'value' (a boolean value)
+stack traceback:
+	Main.lua:11: in function <Main.lua:6>
+LuaInterface.LuaState:PCall(Int32, Int32) (at Assets/LuaFramework/ToLua/Core/LuaState.cs:767)
+LuaInterface.LuaFunction:PCall() (at Assets/LuaFramework/ToLua/Core/LuaFunction.cs:96)
+LuaInterface.LuaFunction:Call() (at Assets/LuaFramework/ToLua/Core/LuaFunction.cs:120)
+LuaFramework.LuaManager:ConnectEmmyLua() (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:63)
+LuaFramework.LuaManager:StartMain() (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:55)
+LuaFramework.LuaManager:InitStart() (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:27)
+LuaFramework.GameManager:OnInitialize() (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:37)
+LuaFramework.GameManager:Init() (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:31)
+LuaFramework.GameManager:Awake() (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:19)
+UnityEngine.GameObject:AddComponent()
+Facade:AddManager(String) (at Assets/LuaFramework/Scripts/Framework/Core/Facade.cs:87)
+AppFacade:StartUp() (at Assets/LuaFramework/Scripts/Framework/AppFacade.cs:45)
+Main:AfterHotUpdate() (at Assets/Scripts/Main.cs:39)
+Main:<Awake>b__0_0() (at Assets/Scripts/Main.cs:23)
+UpdatePanel:Finish() (at Assets/Scripts/View/UI/UpdatePanel.cs:154)
+UpdatePanel:NothingUpdate() (at Assets/Scripts/View/UI/UpdatePanel.cs:111)
+HotUpdater:Start() (at Assets/Scripts/Logic/HotUpdate/HotUpdater.cs:122)
+UpdatePanel:Start() (at Assets/Scripts/View/UI/UpdatePanel.cs:66)
+UnityEngine.GameObject:AddComponent()
+Facade:AddManager(String) (at Assets/LuaFramework/Scripts/Framework/Core/Facade.cs:87)
+AppFacade:StartUp() (at Assets/LuaFramework/Scripts/Framework/AppFacade.cs:45)
+Main:AfterHotUpdate() (at Assets/Scripts/Main.cs:39)
+Main:<Awake>b__0_0() (at Assets/Scripts/Main.cs:23)
+UpdatePanel:Finish() (at Assets/Scripts/View/UI/UpdatePanel.cs:154)
+UpdatePanel:NothingUpdate() (at Assets/Scripts/View/UI/UpdatePanel.cs:111)
+HotUpdater:Start() (at Assets/Scripts/Logic/HotUpdate/HotUpdater.cs:122)
+UpdatePanel:Start() (at Assets/Scripts/View/UI/UpdatePanel.cs:66)
+
+
+~NetworkManager was destroy
+
+11:43:29.730-0: Lua function Network.Unload not exists
+
+NullReferenceException: Object reference not set to an instance of an object
+LuaFramework.LuaManager.Close () (at Assets/LuaFramework/Scripts/Manager/LuaManager.cs:127)
+LuaFramework.GameManager.OnDestroy () (at Assets/LuaFramework/Scripts/Manager/GameManager.cs:58)
+
+

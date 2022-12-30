@@ -1,0 +1,5 @@
+[
+    { "id":1, "editor_path":"UIPrefabs/LoginPanel.prefab", "desc":"登录界面" },
+    { "id":2, "editor_path":"UIPrefabs/PlazaPanel.prefab", "desc":"大厅界面" },
+    { "id":3, "editor_path":"UIPrefabs/TipsFly.prefab", "desc":"提示语" }
+]

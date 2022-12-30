@@ -1,0 +1,56 @@
+appVersion: 1.0.0.0, resVersion: 1.0.0.1
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "8ac97b2a1df8086545a73a0a1001b6df",
+                "size": 898895,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+09:55:11.672-507: Init lua state cost: 0.1023071
+
+09:55:11.908-507: Register lua type cost time: 0.2286575
+
+GetAssetBundle Error, not contains: lua_update.bundle
+
+
+LuaLoader.AddBundle: lua.bundle
+
+09:55:11.921-507: LuaState start
+
+09:55:11.930-507: ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+09:55:11.930-507: os: Windows, arch: x86
+
+09:55:11.945-507: logic start
+
+LuaFileList done
+
+Network.Start!!
+
+09:55:11.991-507: Type BasePanel not wrap to lua, push as UnityEngine.MonoBehaviour, the warning is only raised once
+
+Game.OnInitOK--->>>
+
+~NetworkManager was destroy
+
+Unload Network...
+
+09:55:15.417-605: LuaState destroy
+
+~GameManager was destroyed
+

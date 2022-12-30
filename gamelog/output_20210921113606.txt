@@ -1,0 +1,716 @@
+appVersion: 1.0.0.2, resVersion: 1.0.0.2
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			
+            {
+                "resVersion": "1.0.0.2",
+                "md5": "eeb0f2096ed94ea50ede47491fa1fb62",
+                "size": 896137,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "71da3959e6552461ca145e9c92bc4bac",
+                "size": 1792693,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+11:36:06.363-1: Init lua state cost: 0.0833416
+
+11:36:06.551-1: Register lua type cost time: 0.181272
+
+11:36:06.561-1: LuaState start
+
+11:36:06.565-1: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+11:36:06.566-1: [tolua.lua:12]:os: Windows, arch: x64
+
+11:36:06.579-1: [Main.lua:3]:logic start
+
+11:36:16.826-1: [Main.lua:11]:logic start
+
+LuaFileList done
+
+Network.Start!!
+
+11:36:16.876-1: Type BasePanel not wrap to lua, push as UnityEngine.MonoBehaviour, the warning is only raised once
+
+Game.OnInitOK--->>>
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+~NetworkManager was destroy
+
+Unload Network...
+
+11:36:22.482-0: LuaState destroy
+
+~GameManager was destroyed
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.SendEventToIMGUIRaw (UnityEngine.UIElements.EventBase evt, System.Boolean canAffectFocus, System.Boolean verifyBounds) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.SendEventToIMGUI (UnityEngine.UIElements.EventBase evt, System.Boolean canAffectFocus, System.Boolean verifyBounds) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleEvent (UnityEngine.UIElements.EventBase evt) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatchUtilities.PropagateEvent (UnityEngine.UIElements.EventBase evt) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.MouseEventDispatchingStrategy.SendEventToRegularTarget (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.MouseEventDispatchingStrategy.SendEventToTarget (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.MouseEventDispatchingStrategy.DispatchEvent (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel iPanel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.ApplyDispatchingStrategies (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel, System.Boolean imguiEventIsInitiallyUsed) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.ProcessEvent (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.ProcessEventQueue () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.OpenGate () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcherGate.Dispose () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.ProcessEvent (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.Dispatch (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel, UnityEngine.UIElements.DispatchMode dispatchMode) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.BaseVisualElementPanel.SendEvent (UnityEngine.UIElements.EventBase e, UnityEngine.UIElements.DispatchMode dispatchMode) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildUpdateZip.OnGUI () (at Assets/Editor/Build/BuildUpdateZip.cs:29)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.SendEventToIMGUIRaw (UnityEngine.UIElements.EventBase evt, System.Boolean canAffectFocus, System.Boolean verifyBounds) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.SendEventToIMGUI (UnityEngine.UIElements.EventBase evt, System.Boolean canAffectFocus, System.Boolean verifyBounds) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleEvent (UnityEngine.UIElements.EventBase evt) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatchUtilities.PropagateEvent (UnityEngine.UIElements.EventBase evt) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.MouseEventDispatchingStrategy.SendEventToRegularTarget (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.MouseEventDispatchingStrategy.SendEventToTarget (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.MouseEventDispatchingStrategy.DispatchEvent (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel iPanel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.ApplyDispatchingStrategies (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel, System.Boolean imguiEventIsInitiallyUsed) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.ProcessEvent (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.ProcessEventQueue () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.OpenGate () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcherGate.Dispose () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.ProcessEvent (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.EventDispatcher.Dispatch (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel, UnityEngine.UIElements.DispatchMode dispatchMode) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.BaseVisualElementPanel.SendEvent (UnityEngine.UIElements.EventBase e, UnityEngine.UIElements.DispatchMode dispatchMode) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint, System.Exception& immediateException) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+Rethrow as ImmediateModeException
+UnityEngine.UIElements.UIR.RenderChain.Render () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIRRepaintUpdater.Update () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.UpdateForRepaint () (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.Panel.Repaint (UnityEngine.Event e) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <c6c7fa140fa645caa3a45225f40c70b8>:0)
+
+
+NullReferenceException: Object reference not set to an instance of an object
+BuildApp.OnGUI () (at Assets/Editor/Build/BuildApp.cs:25)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition, UnityEngine.Rect viewRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect viewRect, UnityEngine.Rect dockAreaRect) (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEditor.DockArea.OldOnGUI () (at <78d3d3d04dca4dcc93baca57a4ef603f>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <f67c665cbb6f45d691f5767199e65f11>:0)
+UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr, Boolean&)
+
+

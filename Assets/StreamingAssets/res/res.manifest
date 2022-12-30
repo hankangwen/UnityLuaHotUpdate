@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 2071831760
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: baseres.bundle
+      Dependencies: {}
+    Info_1:
+      Name: uiprefabs.bundle
+      Dependencies: {}

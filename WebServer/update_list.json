@@ -1,0 +1,15 @@
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "50d550486de1a72bd0caaa560128a9ad",
+                "size": 908405,
+                "url": "http://localhost:7890/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]

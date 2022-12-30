@@ -1,0 +1,332 @@
+appVersion: 1.0.0.2, resVersion: 1.0.0.2
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			
+            {
+                "resVersion": "1.0.0.2",
+                "md5": "eeb0f2096ed94ea50ede47491fa1fb62",
+                "size": 896137,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "71da3959e6552461ca145e9c92bc4bac",
+                "size": 1792693,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+21:31:31.429-1: Init lua state cost: 0.1011925
+
+21:31:31.621-1: Register lua type cost time: 0.1785522
+
+21:31:31.630-1: LuaState start
+
+21:31:31.648-1: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+21:31:31.649-1: [tolua.lua:12]:os: Windows, arch: x64
+
+21:31:31.683-1: [Main.lua:3]:logic start
+
+LuaFileList done
+
+Network.Start!!
+
+21:31:33.991-1: Type BasePanel not wrap to lua, push as UnityEngine.MonoBehaviour, the warning is only raised once
+
+Game.OnInitOK--->>>
+
+Assets\LuaFramework\Scripts\ObjectPool\TestObjectClass.cs(19,23): warning CS0114: 'TestObjectClass.ToString()' hides inherited member 'object.ToString()'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword.
+
+Assets\Scripts\3rd\LitJson\JsonWriter.cs(387,21): warning CS3021: 'JsonWriter.Write(ulong)' does not need a CLSCompliant attribute because the assembly does not have a CLSCompliant attribute
+
+Assets\LuaFramework\Scripts\Network\Converter.cs(109,34): warning CS0675: Bitwise-or operator used on a sign-extended operand; consider casting to a smaller unsigned type first
+
+Assets\LuaFramework\ToLua\BaseType\UnityEngine_ParticleSystemWrap.cs(106,72): warning CS0168: The variable 'arg0' is declared but never used
+
+Assets\LuaFramework\ToLua\BaseType\UnityEngine_ParticleSystemWrap.cs(121,72): warning CS0168: The variable 'arg0' is declared but never used
+
+Assets\LuaFramework\ToLua\BaseType\UnityEngine_ParticleSystemWrap.cs(138,72): warning CS0168: The variable 'arg0' is declared but never used
+
+Assets\LuaFramework\ToLua\BaseType\UnityEngine_ParticleSystemWrap.cs(173,72): warning CS0168: The variable 'arg0' is declared but never used
+
+Assets\LuaFramework\ToLua\BaseType\UnityEngine_ParticleSystemWrap.cs(190,72): warning CS0168: The variable 'arg0' is declared but never used
+
+Assets\LuaFramework\ToLua\BaseType\UnityEngine_ParticleSystemWrap.cs(209,72): warning CS0168: The variable 'arg0' is declared but never used
+
+Assets\LuaFramework\ToLua\Examples\02_ScriptsFromFile\ScriptsFromFile.cs(18,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\02_ScriptsFromFile\ScriptsFromFile.cs(59,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\03_CallLuaFunction\CallLuaFunction.cs(26,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\03_CallLuaFunction\CallLuaFunction.cs(83,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\04_AccessingLuaVariables\AccessingLuaVariables.cs(29,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\04_AccessingLuaVariables\AccessingLuaVariables.cs(81,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\05_LuaCoroutine\TestCoroutine.cs(18,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\05_LuaCoroutine\TestCoroutine.cs(43,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\06_LuaCoroutine2\TestCoroutine2.cs(82,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\06_LuaCoroutine2\TestCoroutine2.cs(97,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\07_LuaThread\TestLuaThread.cs(46,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\07_LuaThread\TestLuaThread.cs(79,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\08_AccessingArray\AccessingArray.cs(46,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\08_AccessingArray\AccessingArray.cs(67,25): warning CS0618: 'LuaFunction.LazyCall(params object[])' is obsolete: 'LuaFunction.LazyCall() is obsolete.Use LuaFunction.Invoke()'
+
+Assets\LuaFramework\ToLua\Examples\08_AccessingArray\AccessingArray.cs(93,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\Scripts\Manager\LuaManager.cs(143,24): warning CS0618: 'LuaFunction.LazyCall(params object[])' is obsolete: 'LuaFunction.LazyCall() is obsolete.Use LuaFunction.Invoke()'
+
+Assets\LuaFramework\ToLua\Examples\10_Enum\AccessingEnum.cs(46,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\09_Dictionary\UseDictionary.cs(71,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\09_Dictionary\UseDictionary.cs(101,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\10_Enum\AccessingEnum.cs(73,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\11_Delegate\TestDelegate.cs(120,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\12_GameObject\TestGameObject.cs(36,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\12_GameObject\TestGameObject.cs(67,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\13_CustomLoader\TestCustomLoader.cs(33,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\13_CustomLoader\TestCustomLoader.cs(45,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\14_Out\TestOutArg.cs(33,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\14_Out\TestOutArg.cs(54,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\15_ProtoBuffer\TestProtoBuffer.cs(86,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\15_ProtoBuffer\TestProtoBuffer.cs(168,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\11_Delegate\TestDelegate.cs(341,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\16_Int64\TestInt64.cs(59,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\16_Int64\TestInt64.cs(92,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\19_cjson\TestCJson.cs(33,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\17_Inherit\TestInherit.cs(79,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\17_Inherit\TestInherit.cs(115,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\19_cjson\TestCJson.cs(66,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\21_String\TestString.cs(38,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\21_String\TestString.cs(63,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\23_List\UseList.cs(152,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\23_List\UseList.cs(185,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\TestErrorStack\TestLuaStack.cs(289,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\TestErrorStack\TestLuaStack.cs(338,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\18_Bundle\TestABLoader.cs(16,16): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Examples\18_Bundle\TestABLoader.cs(16,30): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Examples\24_Struct\PassStruct.cs(120,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\24_Struct\PassStruct.cs(129,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\18_Bundle\TestABLoader.cs(90,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Examples\18_Bundle\TestABLoader.cs(119,9): warning CS0618: 'Application.RegisterLogCallback(Application.LogCallback)' is obsolete: 'Application.RegisterLogCallback is deprecated. Use Application.logMessageReceived instead.'
+
+Assets\LuaFramework\ToLua\Core\ToLua.cs(205,29): warning CS0219: The variable 'i' is assigned but its value is never used
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(9,23): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(46,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(46,31): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(54,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(54,31): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(62,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(62,31): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(71,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(71,31): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(96,16): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(104,16): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(129,16): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(137,16): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(163,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(163,25): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(171,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(171,25): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(179,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(179,25): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(188,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(188,25): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(197,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(197,25): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(206,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(206,25): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(227,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(227,61): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(227,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(244,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(244,61): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(244,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(263,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(263,62): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(263,28): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(270,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(270,62): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(270,28): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(278,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(278,62): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(278,28): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(287,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(287,62): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(287,28): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(315,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(315,62): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(315,28): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(322,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(322,62): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(322,28): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(330,5): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(330,62): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(330,28): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(356,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(356,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(375,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(375,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(394,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(394,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(413,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(413,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(432,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(432,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(451,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(451,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(470,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(470,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(489,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(489,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(508,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(508,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(527,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(527,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(546,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(546,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(565,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(565,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(584,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(584,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(603,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(603,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(622,4): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\ToLua\Source\Generate\UnityEngine_WWWWrap.cs(622,27): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\Scripts\Logic\HotUpdate\Downloader.cs(133,37): warning CS0168: The variable 'e' is declared but never used
+

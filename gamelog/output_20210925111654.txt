@@ -1,0 +1,71 @@
+appVersion: 1.0.0.2, resVersion: 1.0.0.2
+
+[
+    {
+        "appVersion": "1.0.0.0",
+        "appUrl": "https://blog.csdn.net/linxinfa",
+        "updateList":
+        [
+			
+            {
+                "resVersion": "1.0.0.2",
+                "md5": "eeb0f2096ed94ea50ede47491fa1fb62",
+                "size": 896137,
+                "url": "http://49.235.191.98:80/res_1.0.0.2.zip"
+            },
+            {
+                "resVersion": "1.0.0.1",
+                "md5": "71da3959e6552461ca145e9c92bc4bac",
+                "size": 1792693,
+                "url": "http://49.235.191.98:80/res_1.0.0.1.zip"
+            }
+        ]
+    }
+]
+
+
+m_packList.Count: 0
+
+AfterHotUpdate
+
+11:16:54.392-1: Init lua state cost: 0.08318615
+
+11:16:54.576-1: Register lua type cost time: 0.178205
+
+11:16:54.585-1: LuaState start
+
+11:16:54.589-1: [tolua.lua:11]:ver20100 jit:     true    SSE2    SSE3    SSE4.1    BMI2    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+11:16:54.590-1: [tolua.lua:12]:os: Windows, arch: x64
+
+11:16:54.604-1: [Main.lua:3]:logic start
+
+11:16:54.653-1: [LuaManager.cs:6]:Connect EmmyLua=true
+
+LuaFileList done
+
+Network.Start!!
+
+11:16:54.717-1: Type BasePanel not wrap to lua, push as UnityEngine.MonoBehaviour, the warning is only raised once
+
+Game.OnInitOK--->>>
+
+~NetworkManager was destroy
+
+Unload Network...
+
+11:17:21.40-0: LuaState destroy
+
+~GameManager was destroyed
+
+Assets\LuaFramework\Editor\CustomSettings.cs(11,7): warning CS0105: The using directive for 'UnityEngine.UI' appeared previously in this namespace
+
+Assets\Editor\Custom\GM\GMPanel.cs(41,38): error CS0103: The name 'PathDefine' does not exist in the current context
+
+
+Assets\LuaFramework\Editor\CustomSettings.cs(112,20): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
+Assets\LuaFramework\Editor\CustomSettings.cs(11,7): warning CS0105: The using directive for 'UnityEngine.UI' appeared previously in this namespace
+
+Assets\LuaFramework\Editor\CustomSettings.cs(112,20): warning CS0618: 'WWW' is obsolete: 'Use UnityWebRequest, a fully featured replacement which is more efficient and has additional features'
+
