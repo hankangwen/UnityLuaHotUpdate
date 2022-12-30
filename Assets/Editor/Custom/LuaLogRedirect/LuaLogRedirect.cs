@@ -1,6 +1,7 @@
 using System.Reflection;
 using UnityEditor;
 using System;
+using System.IO;
 using System.Text.RegularExpressions;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -116,9 +117,12 @@ public class LuaLogRedirect
         string value = String.Empty;
         if (line == 0)
         {
-            Regex regex = new Regex("Assets/.*\\.lua:[0-9]+");
-            Match match = regex.Match(log);
-            value = match.Groups[0].Value.Trim();
+            var start = log.IndexOf('[') + 1;
+            var end = log.IndexOf(']');
+            
+            CString sb = CString.Alloc(256);
+            sb.Append(log, start, end - start);
+            value = sb.ToString();
         }
         else
         {
@@ -138,7 +142,7 @@ public class LuaLogRedirect
         var strs = value.Split(':');
         if (strs.Length >= 2)
         {
-            var filePath = strs[0];
+            var filePath = ConvertToRealFilePath(strs[0]);
             var lineNumber = int.Parse(strs[1].Split(']')[0]);
 
             strs = strs[0].Split('/');
@@ -155,5 +159,13 @@ public class LuaLogRedirect
         }
 
         return false;
+    }
+
+    private static string ConvertToRealFilePath(string filePath)
+    {
+        string path = LuaConst.luaDir + "/" + filePath;
+        if(!File.Exists(path))
+            path = LuaConst.toluaDir + "/" + filePath;
+        return path.Substring(path.IndexOf("Assets"));
     }
 }

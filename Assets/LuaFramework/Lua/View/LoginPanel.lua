@@ -17,6 +17,11 @@ end
 
 function LoginPanel.Print2()
 	print('Print2')
+	this.Print3()
+end
+
+function LoginPanel.Print3()
+	print('Print3')
 end
 
 function LoginPanel.OnShow(obj)

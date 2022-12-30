@@ -45,7 +45,6 @@ namespace LuaFramework {
 
         void StartMain() {
 #if UNITY_EDITOR
-            OverrideLuaPrint();
             ConnectEmmyLua();
             // ListenEmmyLua();
 #endif
@@ -59,21 +58,6 @@ namespace LuaFramework {
         }
 
 #if UNITY_EDITOR
-        private void OverrideLuaPrint()
-        {
-            //如果移动了ToLua目录，自己手动修复吧，只是例子就不做配置了
-            string fullPath = Application.dataPath + "\\Editor/Custom/LuaLogRedirect";
-            lua.AddSearchPath(fullPath);     
-            
-            // string str =
-            //     @"
-            //         pcall(function print(...)
-            //             
-            //         end)                              
-            //     ";
-            // lua.DoString(str, "LuaManager.cs");
-        }
-        
         public void ConnectEmmyLua()
         {
             string str =
@@ -95,7 +79,7 @@ namespace LuaFramework {
                     pcall(function()
                         package.cpath = package.cpath .. ';' .. UnityEngine.Application.dataPath .. '/../OtherTools/Emmylua/emmy_core.dll'
                         local dbg = require('emmy_core')
-	                    local value = dbg.tcpListen('localhost', 9967)
+	                    local value = dbg.tcpListen('localhost', 5200)
 	                    print(string.format('Listen EmmyLua=%s', value))
                     end)                               
                 ";

@@ -200,10 +200,7 @@ namespace LuaInterface
 
                     var message = sb.ToString();
 #if UNITY_EDITOR
-                    if (message.Contains("Print2"))
-                    {
-                        int i = 0;
-                    }    
+                    message = CustomTools.DebugerUtility.Instance.StacktraceWithHyperlinks(message);
 #endif
                     Debugger.Log(message);            //200行与_line一致
                 }
