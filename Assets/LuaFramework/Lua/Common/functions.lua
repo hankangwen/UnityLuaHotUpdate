@@ -3,31 +3,10 @@
 --	local s = string.format(fmt, select (1, ...))
 --	return s
 --end
---
---local function ToString(...)
---	local args = { ... }
---	local count = select("#", ...)
---	for i = 1, count, 1 do
---		args[i] = tostring(args[i])
---	end
---	return table.concat(args, '\t')
---end
---
---function LogInfo(...)
---	Debugger:Log(ToString(...));
---end
---
---function LogError(...)
---	local s = ToString(...)
---	local tStackInfo = debug.traceback()
---	s = s.."\n"..tStackInfo
---	Debugger:LogError(s);
---end
---
---function LogWarning(...)
---	Debugger:LogWarn(ToString(...));
---end
---
+
+
+
+
 --function LogInfoFormat(fmt, ...)
 --	print(_FormatLog(fmt, ...));--Debugger:Log 不能被KGLog捕获到，临时改成print
 --end
@@ -53,22 +32,46 @@
 --	Debugger:LogWarn(_FormatLog(fmt, ...));
 --end
 
---输出日志--
-function log(str)
-	local tStackInfo = debug.traceback()
-	str = str.."\n"..tStackInfo
-    GameLogger.Log(str);
+local function ToString(...)
+	local args = { ... }
+	local count = select("#", ...)
+	for i = 1, count, 1 do
+		args[i] = tostring(args[i])
+	end
+	return table.concat(args, '\t')
 end
+
+--输出日志--
+function log(...)
+	local s = ToString(...)
+	local tStackInfo = debug.traceback()
+	s = s.."\n"..tStackInfo
+	GameLogger.Log(s);
+end
+--function log(str)
+--	local tStackInfo = debug.traceback()
+--	str = str.."\n"..tStackInfo
+--    GameLogger.Log(str);
+--end
 
 --错误日志--
-function logError(str) 
-	GameLogger.LogError(str);
+function logError(...)
+	local s = ToString(...)
+	local tStackInfo = debug.traceback()
+	s = s.."\n"..tStackInfo
+	GameLogger.LogError(s);
 end
+--function logError(str) 
+--	GameLogger.LogError(str);
+--end
 
 --警告日志--
-function logWarn(str) 
-	GameLogger.LogWarning(str);
+function logWarn(...)
+	GameLogger.LogWarning(ToString(...));
 end
+--function logWarn(str) 
+--	GameLogger.LogWarning(str);
+--end
 
 function logGreen(str)
 	GameLogger.LogGreen(str)
