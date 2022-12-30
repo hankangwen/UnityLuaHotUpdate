@@ -18,8 +18,12 @@ namespace LuaFramework
         public const string AssetDir = "StreamingAssets";
 
         // Web服务器地址，用于热更
+#if UNITY_EDITOR
         public const string WebUrl = "http://localhost:80/";
-        // public const string WebUrl = "http://49.235.191.98:80/";     
+        // public const string WebUrl = "http://1.14.208.107:80/";
+#else
+        public const string WebUrl = "http://1.14.208.107:80/";
+#endif   
 
         // 游戏服务器IP
         public const string SocketAddress = "";

@@ -2,17 +2,158 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a1db25-64fe-46f3-be69-5dcf4549e38e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Log/DebugerUtility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Log/DebugerUtility.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLuaHotUpdate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLuaHotUpdate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/Lua.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/Lua/OverrideLuaPrint.lua" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/Lua/OverrideLuaPrint.lua.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/CString.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Debugger.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Ionic.Zip.Unity.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Mono.Security.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Sirenix.OdinInspector.Attributes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Sirenix.OdinInspector.CompatibilityLayer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Sirenix.Serialization.Config.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Sirenix.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Sirenix.Utilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.ComponentModel.Composition.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Diagnostics.StackTrace.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Drawing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.EnterpriseServices.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Globalization.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.IO.Compression.FileSystem.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.IO.Compression.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Net.Http.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Numerics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Runtime.Serialization.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Runtime.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.ServiceModel.Internals.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Transactions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Xml.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Xml.XPath.XDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/System.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Unity.Timeline.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Unity.VisualScripting.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Unity.VisualScripting.Flow.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/Unity.VisualScripting.State.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.AIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.ARModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.AccessibilityModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.AndroidJNIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.AnimationModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.AssetBundleModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.AudioModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.AutoStreamingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.ClothModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.ClusterInputModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.ClusterRendererModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.CoreModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.CrashReportingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.DSPGraphModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.DirectorModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.GIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.GameCenterModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.GridModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.HotReloadModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.IMGUIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.ImageConversionModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.InputLegacyModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.InputModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.JSONSerializeModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.LocalizationModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.ParticleSystemModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.PerformanceReportingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.Physics2DModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.PhysicsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.ProfilerModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.ScreenCaptureModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.SharedInternalsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.SpriteMaskModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.SpriteShapeModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.StreamingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.SubstanceModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.SubsystemsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.TLSModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.TerrainModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.TextCoreModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.TextRenderingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.TilemapModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UIElementsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UIElementsNativeModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UNETModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UmbraModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UnityConnectModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UnityCurlModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UnityWebRequestModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.VFXModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.VRModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.VehiclesModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.VideoModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.VirtualTexturingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.WindModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.XRModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/UnityEngine.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/mscorlib.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Managed/netstandard.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Plugins/x86/lua51.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Resources/unity default resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/Resources/unity_builtin_extra" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/RuntimeInitializeOnLoads.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/ScriptingAssemblies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/3dprefabs.bundle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/3dprefabs.bundle.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/audio.bundle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/audio.bundle.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/baseres.bundle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/baseres.bundle.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/lua.bundle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/lua.bundle.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/normal_cfg.bundle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/normal_cfg.bundle.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/res" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/res.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/uiprefabs.bundle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/StreamingAssets/res/uiprefabs.bundle.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/app.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/boot.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/globalgamemanagers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/globalgamemanagers.assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/level0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/resources.assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bin/game_1.0.0.3_Data/sharedassets0.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/Lua/View/LoginPanel.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/Lua/View/LoginPanel.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/Scripts/Manager/LuaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/Scripts/Manager/LuaManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Core/ToLua.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Core/ToLua.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/Scripts/ConstDefine/AppConst.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/Scripts/ConstDefine/AppConst.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/baseres.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/baseres.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/baseres.bundle.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/baseres.bundle.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/lua.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/lua.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/lua.bundle.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/lua.bundle.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/normal_cfg.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/normal_cfg.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/normal_cfg.bundle.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/normal_cfg.bundle.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/res" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/res" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/res.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/res.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/uiprefabs.bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/uiprefabs.bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/res/uiprefabs.bundle.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/res/uiprefabs.bundle.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bin/LuaFrameworkFiles_1.0.0.3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Bin/LuaFrameworkFiles_1.0.0.3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bin/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Bin/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bin/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Bin/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bin/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Bin/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,20 +172,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b68ab9f943c24bf095d46ec36eab87a51e00/15/6f532fd5/Debugger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/f1/46f26dc1/Marshal.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/b2/d6e44810/Path.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35c8d3a2cb984c9588c2530fcd68560417200/54/41242e6c/CString.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.11/Editor/Messaging/Messenger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Log/DebugerUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/b2/d6e44810/Path.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2JcHPGsIO2VgPorzYWVc2RrsWUx" />
   <component name="ProjectLevelVcsManager">
@@ -68,7 +202,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Emmy Debugger(NEW).LuaDebug">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -113,6 +247,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672370426270</updated>
       <workItem from="1672370428381" duration="11568000" />
+      <workItem from="1672390355060" duration="1201000" />
     </task>
     <servers />
   </component>
@@ -132,6 +267,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -153,10 +289,18 @@
           </properties>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="lua-line">
-          <url>file://$PROJECT_DIR$/Assets/LuaFramework/Lua/View/LoginPanel.lua</url>
-          <line>19</line>
-          <option name="timeStamp" value="24" />
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Log/GameLogger.cs</url>
+          <line>80</line>
+          <properties documentPath="E:\GitHub\UnityLuaHotUpdate\Assets\Scripts\Log\GameLogger.cs" initialLine="80" containingFunctionPresentation="method 'Log'">
+            <startOffsets>
+              <option value="2319" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2347" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

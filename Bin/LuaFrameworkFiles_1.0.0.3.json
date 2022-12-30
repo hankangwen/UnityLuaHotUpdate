@@ -33,7 +33,7 @@
 "Assets/LuaFramework/Lua\\Logic\\LuaClass.lua":"281529a11fe604b67523c328f8412cc0",
 "Assets/LuaFramework/Lua\\Logic\\Network.lua":"18e507f5c1fa3e603dc4815126da1689",
 "Assets/LuaFramework/Lua\\Logic\\UserData.lua":"434cbe97b0db7bae6311aeae9c1818cc",
-"Assets/LuaFramework/Lua\\View\\LoginPanel.lua":"655ca1318a32bb5615823b5f166028cf",
+"Assets/LuaFramework/Lua\\View\\LoginPanel.lua":"6d9edb482144b477a2cc15038474635e",
 "Assets/LuaFramework/Lua\\View\\PlazaPanel.lua":"0dd6a03e5422390b3decad339a16c279",
 "Assets/LuaFramework/Lua\\View\\ShowFlyTips.lua":"cf3b6d913499f5e3e51ed5fe13d9b8e1",
 "Assets/LuaFramework/ToLua/Lua\\event.lua":"1d053e2620d8778b159a257c140d7f2d",

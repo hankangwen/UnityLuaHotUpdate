@@ -1,6 +1,62 @@
 
+--local function _FormatLog(fmt, ...)
+--	local s = string.format(fmt, select (1, ...))
+--	return s
+--end
+--
+--local function ToString(...)
+--	local args = { ... }
+--	local count = select("#", ...)
+--	for i = 1, count, 1 do
+--		args[i] = tostring(args[i])
+--	end
+--	return table.concat(args, '\t')
+--end
+--
+--function LogInfo(...)
+--	Debugger:Log(ToString(...));
+--end
+--
+--function LogError(...)
+--	local s = ToString(...)
+--	local tStackInfo = debug.traceback()
+--	s = s.."\n"..tStackInfo
+--	Debugger:LogError(s);
+--end
+--
+--function LogWarning(...)
+--	Debugger:LogWarn(ToString(...));
+--end
+--
+--function LogInfoFormat(fmt, ...)
+--	print(_FormatLog(fmt, ...));--Debugger:Log 不能被KGLog捕获到，临时改成print
+--end
+--
+--function LogErrorFormat(fmt, ...)
+--	local s = _FormatLog(fmt, ...)
+--	local tStackInfo = debug.traceback()
+--	s = s.."\n"..tStackInfo
+--	Debugger:LogError(s);
+--end
+--
+--function LogErrorWithOutTrace(...)
+--	local s = ToString(...)
+--	Debugger:LogError(s);
+--end
+--
+--function LogErrorFormatWithOutTrace(fmt, ...)
+--	local s = _FormatLog(fmt, ...)
+--	Debugger:LogError(s);
+--end
+--
+--function LogWarningFormat(fmt, ...)
+--	Debugger:LogWarn(_FormatLog(fmt, ...));
+--end
+
 --输出日志--
 function log(str)
+	local tStackInfo = debug.traceback()
+	str = str.."\n"..tStackInfo
     GameLogger.Log(str);
 end
 

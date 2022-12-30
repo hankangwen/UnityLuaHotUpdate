@@ -21,7 +21,8 @@ function LoginPanel.Print2()
 end
 
 function LoginPanel.Print3()
-	print('Print3')
+	log('Print3')
+	
 end
 
 function LoginPanel.OnShow(obj)
