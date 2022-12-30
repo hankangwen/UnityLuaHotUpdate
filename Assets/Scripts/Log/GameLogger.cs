@@ -9,6 +9,7 @@ using System.IO;
 
 public class GameLogger
 {
+    public static bool s_saveLog = false;
     // 普通调试日志开关
     public static bool s_debugLogEnable = true;
     // 警告日志开关
@@ -26,6 +27,8 @@ public class GameLogger
     /// </summary>
     public static void Init()
     {
+        if (!s_saveLog) return;
+        
         // 日期
         var t = System.DateTime.Now.ToString("yyyyMMddhhmmss");
         

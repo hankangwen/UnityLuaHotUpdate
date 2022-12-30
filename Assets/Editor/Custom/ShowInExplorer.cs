@@ -52,7 +52,7 @@ public static class ShowInExplorer
         }
     }
  
-    [MenuItem("Assets/Show in Explorer(Link) %K", false, 18)]
+    [MenuItem("Assets/Show in Explorer(Link) %G", false, 18)]
     private static void openInExplore()
     {
         string path = AssetDatabase.GUIDToAssetPath(Selection.assetGUIDs[0]);

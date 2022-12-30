@@ -65,13 +65,13 @@ namespace LuaFramework {
             string fullPath = Application.dataPath + "\\Editor/Custom/LuaLogRedirect";
             lua.AddSearchPath(fullPath);     
             
-            string str =
-                @"
-                    pcall(function print(...)
-                        
-                    end)                              
-                ";
-            lua.DoString(str, "LuaManager.cs");
+            // string str =
+            //     @"
+            //         pcall(function print(...)
+            //             
+            //         end)                              
+            //     ";
+            // lua.DoString(str, "LuaManager.cs");
         }
         
         public void ConnectEmmyLua()
@@ -81,7 +81,7 @@ namespace LuaFramework {
                     pcall(function()
                         package.cpath = package.cpath .. ';' .. UnityEngine.Application.dataPath .. '/../OtherTools/Emmylua/emmy_core.dll'
                         local dbg = require('emmy_core')
-	                    local value = dbg.tcpConnect('localhost', 9966)
+	                    local value = dbg.tcpConnect('localhost', 5200)
 	                    print(string.format('Connect EmmyLua=%s', value))
                     end)                              
                 ";
