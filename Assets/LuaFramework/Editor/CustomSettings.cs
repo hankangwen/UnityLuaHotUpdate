@@ -8,7 +8,6 @@ using UnityEditor;
 using BindType = ToLuaMenu.BindType;
 using UnityEngine.UI;
 using System.Reflection;
-using UnityEngine.UI;
 
 public static class CustomSettings
 {

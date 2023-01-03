@@ -21,11 +21,12 @@ end
 
 --输出日志--
 function log(...)
-	GameLogger.Log(ToString(...))
+	GameLogger.Log(_WithTrace(...))
 end
 
 function logFormat(fmt, ...)
-	GameLogger.Log(_FormatLog(fmt, ...))
+	local s = _FormatLog(fmt, ...)
+	GameLogger.Log(_WithTrace(s))
 end
 
 function logGreen(...)
@@ -48,10 +49,7 @@ end
 
 --警告日志--
 function logWarn(...)
-	local s = ToString(...)
-	local tStackInfo = debug.traceback()
-	s = s.."\n"..tStackInfo
-	GameLogger.LogWarning(s);
+	GameLogger.LogWarning(_WithTrace(...));
 end
 
 function logWarningFormat(fmt, ...)

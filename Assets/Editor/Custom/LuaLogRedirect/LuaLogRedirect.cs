@@ -4,7 +4,6 @@ using System;
 using System.IO;
 using System.Text.RegularExpressions;
 using UnityEditor.Callbacks;
-using UnityEngine;
 
 public class LuaLogRedirect
 {
