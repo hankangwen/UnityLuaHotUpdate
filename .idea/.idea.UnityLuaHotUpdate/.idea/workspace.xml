@@ -4,12 +4,6 @@
     <list default="true" id="21a1db25-64fe-46f3-be69-5dcf4549e38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLuaHotUpdate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLuaHotUpdate/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/Lua/Common/functions.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/Lua/Common/functions.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/Scripts/ConstDefine/AppConst.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/Scripts/ConstDefine/AppConst.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/3rd/LitJson/LitJSON.csproj.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +24,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/RiderScriptEditor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Log/DebugerUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.11/Editor/Messaging/Messenger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Log/DebugerUtility.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2JcHPGsIO2VgPorzYWVc2RrsWUx" />
   <component name="ProjectLevelVcsManager">
@@ -102,6 +96,7 @@
       <workItem from="1672370428381" duration="11568000" />
       <workItem from="1672390355060" duration="1201000" />
       <workItem from="1672397163122" duration="4822000" />
+      <workItem from="1672709918556" duration="1534000" />
     </task>
     <servers />
   </component>

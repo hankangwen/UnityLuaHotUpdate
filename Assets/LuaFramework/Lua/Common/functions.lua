@@ -1,37 +1,3 @@
-
---local function _FormatLog(fmt, ...)
---	local s = string.format(fmt, select (1, ...))
---	return s
---end
-
-
-
-
---function LogInfoFormat(fmt, ...)
---	print(_FormatLog(fmt, ...));--Debugger:Log 不能被KGLog捕获到，临时改成print
---end
---
---function LogErrorFormat(fmt, ...)
---	local s = _FormatLog(fmt, ...)
---	local tStackInfo = debug.traceback()
---	s = s.."\n"..tStackInfo
---	Debugger:LogError(s);
---end
---
---function LogErrorWithOutTrace(...)
---	local s = ToString(...)
---	Debugger:LogError(s);
---end
---
---function LogErrorFormatWithOutTrace(fmt, ...)
---	local s = _FormatLog(fmt, ...)
---	Debugger:LogError(s);
---end
---
---function LogWarningFormat(fmt, ...)
---	Debugger:LogWarn(_FormatLog(fmt, ...));
---end
-
 local function ToString(...)
 	local args = { ... }
 	local count = select("#", ...)
@@ -41,40 +7,55 @@ local function ToString(...)
 	return table.concat(args, '\t')
 end
 
---输出日志--
-function log(...)
+local function _FormatLog(fmt, ...)
+	local s = string.format(fmt, select (1, ...))
+	return s
+end
+
+local function _WithTrace(...)
 	local s = ToString(...)
 	local tStackInfo = debug.traceback()
 	s = s.."\n"..tStackInfo
-	GameLogger.Log(s);
+	return s
 end
---function log(str)
---	local tStackInfo = debug.traceback()
---	str = str.."\n"..tStackInfo
---    GameLogger.Log(str);
---end
+
+--输出日志--
+function log(...)
+	GameLogger.Log(ToString(...))
+end
+
+function logFormat(fmt, ...)
+	GameLogger.Log(_FormatLog(fmt, ...))
+end
+
+function logGreen(...)
+	GameLogger.LogGreen(ToString(...))
+end
+
+function logGreenFormat(fmt, ...)
+	GameLogger.LogGreen(_FormatLog(fmt, ...))
+end
 
 --错误日志--
 function logError(...)
-	local s = ToString(...)
-	local tStackInfo = debug.traceback()
-	s = s.."\n"..tStackInfo
-	GameLogger.LogError(s);
+	GameLogger.LogError(_WithTrace(...))
 end
---function logError(str) 
---	GameLogger.LogError(str);
---end
+
+function logErrorFormat(fmt, ...)
+	local s = _FormatLog(fmt, ...)
+	GameLogger.LogError(_WithTrace(s))
+end
 
 --警告日志--
 function logWarn(...)
-	GameLogger.LogWarning(ToString(...));
+	local s = ToString(...)
+	local tStackInfo = debug.traceback()
+	s = s.."\n"..tStackInfo
+	GameLogger.LogWarning(s);
 end
---function logWarn(str) 
---	GameLogger.LogWarning(str);
---end
 
-function logGreen(str)
-	GameLogger.LogGreen(str)
+function logWarningFormat(fmt, ...)
+	GameLogger.LogWarning(_FormatLog(fmt, ...));
 end
 
 --查找对象--
