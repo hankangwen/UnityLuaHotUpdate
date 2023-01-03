@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+#pragma warning disable 0114
+
 namespace LuaFramework {
 
     public class TestObjectClass {
@@ -8,8 +10,7 @@ namespace LuaFramework {
         public string name;
         public int value1;
         public float value2;
-
-        // Use this for initialization
+        
         public TestObjectClass(string name, int value1, float value2) {
             this.name = name;
             this.value1 = value1;

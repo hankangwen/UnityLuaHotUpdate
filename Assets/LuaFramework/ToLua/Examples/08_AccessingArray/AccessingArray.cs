@@ -40,11 +40,8 @@ public class AccessingArray : MonoBehaviour
 
     void Start()
     {
-#if UNITY_5 || UNITY_2017 || UNITY_2018
         Application.logMessageReceived += ShowTips;
-#else
-        Application.RegisterLogCallback(ShowTips);
-#endif
+        
         new LuaResLoader();
         lua = new LuaState();
         lua.Start();
@@ -87,11 +84,8 @@ public class AccessingArray : MonoBehaviour
 
     void OnApplicationQuit()
     {
-#if UNITY_5 || UNITY_2017 || UNITY_2018
         Application.logMessageReceived -= ShowTips;
-#else
-        Application.RegisterLogCallback(null);
-#endif
+        
         func.Dispose();
         lua.Dispose();
     }

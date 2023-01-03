@@ -126,17 +126,13 @@ public class LuaLogRedirect
         }
         else
         {
-            var pre = ">" + Application.dataPath;
+            var pre = ">";
             var after = "</a>";
-            Regex regex = new Regex(pre + @"/.*.lua:.*" + after);
+            Regex regex = new Regex(pre + @"[a-zA-Z/]+:[0-9]+" + after);
             Match match = regex.Match(log);
             value = match.Groups[0].Value.Trim();
-            if (!value.Contains(".lua"))
-                return false;
-
-            value = value.Replace(pre, "");
             value = value.Replace(after, "");
-            value = "Assets" + value;
+            value = value.Replace(pre, "");
         }
 
         var strs = value.Split(':');
@@ -145,15 +141,17 @@ public class LuaLogRedirect
             var filePath = ConvertToRealFilePath(strs[0]);
             var lineNumber = int.Parse(strs[1].Split(']')[0]);
 
-            strs = strs[0].Split('/');
+            strs = filePath.Split('/');
             string fileName = strs[strs.Length - 1];
 
             if (fileName.Contains(".lua"))
             {
-                var assetObj = AssetDatabase.LoadAssetAtPath<DefaultAsset>(filePath);
-                openInstanceID = assetObj.GetInstanceID();
-                openLine = lineNumber;
-                AssetDatabase.OpenAsset(assetObj, lineNumber);
+                // var assetObj = AssetDatabase.LoadAssetAtPath<DefaultAsset>(filePath);
+                // openInstanceID = assetObj.GetInstanceID();
+                // openLine = lineNumber;
+                // AssetDatabase.OpenAsset(assetObj, lineNumber);
+                
+                UnityEditorInternal.InternalEditorUtility.OpenFileAtLineExternal(filePath.Replace('/', '\\'), lineNumber);
                 return true;
             }
         }
@@ -163,6 +161,9 @@ public class LuaLogRedirect
 
     private static string ConvertToRealFilePath(string filePath)
     {
+        if (!filePath.EndsWith(".lua"))
+            filePath = filePath + ".lua";
+        
         string path = LuaConst.luaDir + "/" + filePath;
         if(!File.Exists(path))
             path = LuaConst.toluaDir + "/" + filePath;

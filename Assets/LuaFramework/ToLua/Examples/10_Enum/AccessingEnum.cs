@@ -40,11 +40,8 @@ public class AccessingEnum : MonoBehaviour
 
     void Start () 
     {
-#if UNITY_5 || UNITY_2017 || UNITY_2018
         Application.logMessageReceived += ShowTips;
-#else
-        Application.RegisterLogCallback(ShowTips);
-#endif
+        
         new LuaResLoader();
         state = new LuaState();
         state.Start();
@@ -67,11 +64,7 @@ public class AccessingEnum : MonoBehaviour
         state.Dispose();
         state = null;
 
-#if UNITY_5 || UNITY_2017 || UNITY_2018
         Application.logMessageReceived -= ShowTips;
-#else
-        Application.RegisterLogCallback(null);
-#endif        
     }
 
     string tips = "";

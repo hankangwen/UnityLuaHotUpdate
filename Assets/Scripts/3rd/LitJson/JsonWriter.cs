@@ -15,6 +15,7 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 
+#pragma warning disable 3021
 
 namespace LitJson
 {

@@ -114,20 +114,12 @@ public class PassStruct : LuaClient
     new void OnApplicationQuit()
     {
         base.OnApplicationQuit();
-#if UNITY_5 || UNITY_2017 || UNITY_2018
         Application.logMessageReceived -= ShowTips;
-#else
-        Application.RegisterLogCallback(null);
-#endif                  
     }
 
     new void Awake()
     {
-#if UNITY_5 || UNITY_2017 || UNITY_2018
         Application.logMessageReceived += ShowTips;
-#else
-        Application.RegisterLogCallback(ShowTips);
-#endif
         base.Awake();
     }
 

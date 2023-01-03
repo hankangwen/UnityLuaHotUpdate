@@ -84,11 +84,8 @@ public class TestABLoader : MonoBehaviour
 
     void Awake()
     {
-#if UNITY_5 || UNITY_2017 || UNITY_2018
         Application.logMessageReceived += ShowTips;
-#else
-        Application.RegisterLogCallback(ShowTips);
-#endif
+        
         LuaFileUtils file = new LuaFileUtils();
         file.beZip = true;
 #if UNITY_ANDROID && UNITY_EDITOR
@@ -113,11 +110,7 @@ public class TestABLoader : MonoBehaviour
 
     void OnApplicationQuit()
     {
-#if UNITY_5 || UNITY_2017 || UNITY_2018
         Application.logMessageReceived -= ShowTips;
-#else
-        Application.RegisterLogCallback(null);
-#endif
     }
 
     void OnBundleLoad()

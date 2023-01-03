@@ -3,7 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="21a1db25-64fe-46f3-be69-5dcf4549e38e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnityLuaHotUpdate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnityLuaHotUpdate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/Lua/Common/functions.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/Lua/Common/functions.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/Scripts/ObjectPool/TestObjectClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/Scripts/ObjectPool/TestObjectClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/BaseType/UnityEngine_ParticleSystemWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/BaseType/UnityEngine_ParticleSystemWrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/02_ScriptsFromFile/ScriptsFromFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/02_ScriptsFromFile/ScriptsFromFile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/03_CallLuaFunction/CallLuaFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/03_CallLuaFunction/CallLuaFunction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/04_AccessingLuaVariables/AccessingLuaVariables.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/04_AccessingLuaVariables/AccessingLuaVariables.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/05_LuaCoroutine/TestCoroutine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/05_LuaCoroutine/TestCoroutine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/06_LuaCoroutine2/TestCoroutine2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/06_LuaCoroutine2/TestCoroutine2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/07_LuaThread/TestLuaThread.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/07_LuaThread/TestLuaThread.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/08_AccessingArray/AccessingArray.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/08_AccessingArray/AccessingArray.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/09_Dictionary/UseDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/09_Dictionary/UseDictionary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/10_Enum/AccessingEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/10_Enum/AccessingEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/11_Delegate/TestDelegate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/11_Delegate/TestDelegate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/12_GameObject/TestGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/12_GameObject/TestGameObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/13_CustomLoader/TestCustomLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/13_CustomLoader/TestCustomLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/17_Inherit/TestInherit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LuaFramework/ToLua/Examples/17_Inherit/TestInherit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/3rd/LitJson/JsonWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/3rd/LitJson/JsonWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Log/DebugerUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Log/DebugerUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Log/GameLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Log/GameLogger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +42,16 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9054c48fe492485bb63cc80f3d8fbba113ba00/24/003c53e6/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/RiderScriptEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695d1cc93cca45069c528c15c9fdd7493e2800/96/afccd379/CLSCompliantAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Context/GraphClipboard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMPro_CreateObjectMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.11/Editor/Messaging/Messenger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78d3d3d04dca4dcc93baca57a4ef603f763000/60/326ec486/EditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Log/DebugerUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4b73dfe144bc4f06be8b2a7896b3ab8624000/cd/e814b891/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2JcHPGsIO2VgPorzYWVc2RrsWUx" />
   <component name="ProjectLevelVcsManager">
@@ -38,7 +64,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.1744312" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.2248104" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -96,7 +122,8 @@
       <workItem from="1672370428381" duration="11568000" />
       <workItem from="1672390355060" duration="1201000" />
       <workItem from="1672397163122" duration="4822000" />
-      <workItem from="1672709918556" duration="1534000" />
+      <workItem from="1672709918556" duration="8940000" />
+      <workItem from="1672729415116" duration="300000" />
     </task>
     <servers />
   </component>
@@ -132,10 +159,56 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Log/GameLogger.cs</url>
-          <line>80</line>
-          <properties documentPath="E:\GitHub\UnityLuaHotUpdate\Assets\Scripts\Log\GameLogger.cs" initialLine="80" containingFunctionPresentation="method 'Log'" />
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Log/DebugerUtility.cs</url>
+          <line>39</line>
+          <properties documentPath="E:\GitHub\UnityLuaHotUpdate\Assets\Scripts\Log\DebugerUtility.cs" initialLine="39" containingFunctionPresentation="method 'StacktraceWithHyperlinks'">
+            <startOffsets>
+              <option value="1146" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1169" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs</url>
+          <line>134</line>
+          <properties documentPath="E:\GitHub\UnityLuaHotUpdate\Assets\Editor\Custom\LuaLogRedirect\LuaLogRedirect.cs" initialLine="134" containingFunctionPresentation="method 'OpenLuaFile'">
+            <startOffsets>
+              <option value="4024" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4055" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs</url>
+          <line>137</line>
+          <properties documentPath="E:\GitHub\UnityLuaHotUpdate\Assets\Editor\Custom\LuaLogRedirect\LuaLogRedirect.cs" initialLine="137" containingFunctionPresentation="method 'OpenLuaFile'">
+            <startOffsets>
+              <option value="4075" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4103" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs</url>
+          <line>144</line>
+          <properties documentPath="E:\GitHub\UnityLuaHotUpdate\Assets\Editor\Custom\LuaLogRedirect\LuaLogRedirect.cs" initialLine="144" containingFunctionPresentation="method 'OpenLuaFile'">
+            <startOffsets>
+              <option value="4319" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4359" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -22,7 +22,7 @@ namespace CustomTools
         }
 
         string luaLogRedirectPath = @"Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs";
-        Regex regex = new Regex(Application.dataPath + ".*\\.lua:[0-9]+");
+        Regex regex = new Regex("[a-zA-Z/]+:[0-9]+"); 
 
         public string StacktraceWithHyperlinks(string stacktraceText)
         {

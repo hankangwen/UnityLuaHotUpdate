@@ -2,6 +2,8 @@
 using System;
 using LuaInterface;
 
+#pragma warning disable 0168
+
 public class UnityEngine_ParticleSystemWrap
 {
 	public static void Register(LuaState L)
@@ -104,7 +106,7 @@ public class UnityEngine_ParticleSystemWrap
 			{
 				UnityEngine.ParticleSystem obj = (UnityEngine.ParticleSystem)ToLua.CheckObject(L, 1, typeof(UnityEngine.ParticleSystem));
 				Unity.Collections.NativeArray<UnityEngine.ParticleSystem.Particle> arg0;
-				//obj.SetParticles(arg0);
+				// obj.SetParticles(arg0);
 				return 0;
 			}
 			else if (count == 3 && TypeChecker.CheckTypes<LuaInterface.LuaOut<UnityEngine.ParticleSystem.Particle>, int>(L, 2))
