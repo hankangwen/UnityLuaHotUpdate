@@ -1,5 +1,6 @@
 这是我使用Unity + tolua实现的一个热更新框架Demo工程  
 我对应的博客文章：https://linxinfa.blog.csdn.net/article/details/119493890  
+Trello：https://trello.com/b/cRSQcIih/unityhotupdate  
 热更新流程图  
 ![](https://codechina.csdn.net/qq_34035956/UnityHotUpdateFramework/-/raw/dev/OtherTools/ReadMe/hotfixProcess.png)
 下载多个增量包  
