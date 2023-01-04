@@ -73,6 +73,8 @@ namespace TreeInfoTip
             element.SetAttribute(GUID, guid);
             element.SetAttribute(TITLE, title);
             root.AppendChild(element);
+            // TODO:将指定的节点紧接着插入指定的引用节点之后
+            // root.InsertAfter(element, element);
             
             xmlDoc.Save(path);
             
