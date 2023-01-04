@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <trees>
+    <tree path="/src/com/codeInterview" title="程序员代码面试指南by左程云"/>
+    <tree path="/src/com/codeInterview/Path1" title="第一章"/>
+    <tree path="/src/com/codeInterview/Path1/Chapter1_1.java" title="设计一个具有getMin功能的栈" extension="java"/>
+    <tree path="/src/com/codeInterview/Path1/Chapter1_2.java" title="由两个栈组成的队列" extension="java"/>
+    <tree path="/src/com/codeInterview/Path1/Chapter1_3.java" title="如何仅用递归函数和栈操作逆序一个栈" extension="java"/>
+    <tree path="/src/com/codeInterview/Path1/Chapter1_4.java" title="猫狗队列" extension="java"/>
+    <tree path="/src/com/codeInterview/Path1/Chapter1_5.java" title="用一个栈实现另一个栈的排序" extension="java"/>
+    <tree path="/src/com/codeInterview/Path1/Chapter1_6.java" title="由两个栈组成的队列" extension="java"/>
+    <tree path="/src/com/codeInterview/Path1/Chapter1_7.java" title="由两个栈组成的队列" extension="java"/>
+
+    <tree path="/src/com/offer" title="剑指offer"/>
+    <tree path="/src/com/offer/Path1" title="第一章"/>
+    <tree path="/src/com/offer/Path1/Path1_1.java" title="整除除法" extension="java"/>
+    <tree path="/src/com/offer/Path1/Path1_2.java" title="二进制加法" extension="java"/>
+    <tree path="/src/com/offer/Path1/Path1_3.java" title="数字二进制形式1的个数" extension="java"/>
+    <tree path="/src/com/offer/Path1/Path1_4.java" title="只出现一次的数字" extension="java"/>
+    <tree path="/src/com/offer/Path1/Path1_4_1.java" title="只出现一次的数字(简单版)" extension="java"/>
+    <tree path="/src/com/offer/Path1/Path1_5.java" title="单词长度的最大乘积" extension="java"/>
+
+    <tree path="/src/com/offer/Path2" title="第二章"/>
+    <tree path="/src/com/offer/Path2/Path2_6.java" title="排序数组中的两个数字之和" extension="java"/>
+    <tree path="/src/com/offer/Path2/Path2_7.java" title="数组中和为0的3个数字" extension="java"/>
+    <tree path="/src/com/offer/Path2/Path2_8.java" title="和大于或等于k的最短子数组" extension="java"/>
+    <tree path="/src/com/offer/Path2/Path2_9.java" title="乘积小于k的子数组" extension="java"/>
+    <tree path="/src/com/offer/Path2/Path2_10.java" title="Path2_10" extension="java"/>
+    <tree path="/src/com/offer/Path2/Path2_11.java" title="Path2_11" extension="java"/>
+    <tree path="/src/com/offer/Path2/Path2_12.java" title="Path2_12" extension="java"/>
+    <tree path="/src/com/offer/Path2/Path2_13.java" title="Path2_13" extension="java"/>
+</trees>
