@@ -1,3 +1,4 @@
+--region 日志操作 --
 local function ToString(...)
 	local args = { ... }
 	local count = select("#", ...)
@@ -24,17 +25,10 @@ function log(...)
 	GameLogger.Log(_WithTrace(...))
 end
 
+--eg: logFormat("名字:%s, 值:%d", str, num)
 function logFormat(fmt, ...)
 	local s = _FormatLog(fmt, ...)
 	GameLogger.Log(_WithTrace(s))
-end
-
-function logGreen(...)
-	GameLogger.LogGreen(ToString(...))
-end
-
-function logGreenFormat(fmt, ...)
-	GameLogger.LogGreen(_FormatLog(fmt, ...))
 end
 
 --错误日志--
@@ -53,8 +47,52 @@ function logWarn(...)
 end
 
 function logWarningFormat(fmt, ...)
-	GameLogger.LogWarning(_FormatLog(fmt, ...));
+	local s = _FormatLog(fmt, ...)
+	GameLogger.LogWarning(_WithTrace(s))
 end
+
+--颜色日志--
+local COLOR_GREEN = "#00ff00"
+local COLOR_YELLOW = "yellow"
+local COLOR_RED = "red"
+local function _FmtColor(color, ...)
+	local s = ToString(...)
+	return string.format('<color=%s>%s</color>', color, s)
+end
+
+function logGreen(...)
+	local s = _FmtColor(COLOR_GREEN, ...)
+	GameLogger.Log(_WithTrace(s))
+end
+
+function logGreenFormat(fmt, ...)
+	local s = _FormatLog(fmt, ...)
+	s = _FmtColor(COLOR_GREEN, s)
+	GameLogger.Log(_WithTrace(s))
+end
+
+function logYellow(...)
+	local s = _FmtColor(COLOR_YELLOW, ...)
+	GameLogger.Log(_WithTrace(s))
+end
+
+function logYellowFormat(fmt, ...)
+	local s = _FormatLog(fmt, ...)
+	s = _FmtColor(COLOR_YELLOW, s)
+	GameLogger.Log(_WithTrace(s))
+end
+
+function logRed(...)
+	local s = _FmtColor(COLOR_RED, ...)
+	GameLogger.Log(_WithTrace(s))
+end
+
+function logRedFormat(fmt, ...)
+	local s = _FormatLog(fmt, ...)
+	s = _FmtColor(COLOR_RED, s)
+	GameLogger.Log(_WithTrace(s))
+end
+--endregion 日志操作 --
 
 --查找对象--
 function find(str)

@@ -3,6 +3,7 @@ using UnityEditor;
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
+using Unity.VisualScripting;
 using UnityEditor.Callbacks;
 
 public class LuaLogRedirect
@@ -67,7 +68,7 @@ public class LuaLogRedirect
 
     static bool CheckLuaDebugFile(string curPathName)
     {
-        if (curPathName.Contains("Debuger.cs") || curPathName.Contains("ToLua.cs"))
+        if (curPathName.Contains("GameLoggerWrap.cs") || curPathName.Contains("ToLua.cs"))
             return true;
         return false;
     }
@@ -95,7 +96,8 @@ public class LuaLogRedirect
         if (!GetConsoleWindow())
             return false;
 
-        return OpenLuaFile(GetLogText(), 0);
+        int targetLine = curPathName.Contains("GameLoggerWrap.cs") ? 4 : 0;
+        return OpenLuaFile(GetLogText(), targetLine);
     }
 
     static bool OpenCustomLink(int line)

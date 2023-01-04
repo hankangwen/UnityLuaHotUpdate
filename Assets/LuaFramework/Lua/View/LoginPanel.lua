@@ -23,6 +23,15 @@ end
 function LoginPanel.Print3()
 	log('Print3')
 	
+	local str = "字符串"
+	local num = 5200
+	logFormat("名字:%s, 值:%d", str, num)
+	--logErrorFormat("名字:%s, 值:%d", str, num)
+	--logWarningFormat("名字:%s, 值:%d", str, num)
+	logGreen(str)
+	logGreenFormat("名字:%s, 值:%d", str, num)
+	logYellowFormat("名字:%s, 值:%d", str, num)
+	logRedFormat("名字:%s, 值:%d", str, num)
 end
 
 function LoginPanel.OnShow(obj)
