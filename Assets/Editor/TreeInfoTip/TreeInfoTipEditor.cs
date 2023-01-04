@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Xml;
@@ -12,7 +13,7 @@ namespace TreeInfoTip
     public class TreeInfoTipEditor : EditorWindow
     {
         [MenuItem("Tools/项目目录树添加备注信息")]
-        static void ShowEditorWindow()
+        static void ShowTreeInfoTipEditor()
         {
             GetWindow<TreeInfoTipEditor>("项目目录树添加备注信息").Show();
         }
@@ -22,15 +23,17 @@ namespace TreeInfoTip
         {
             if (GUILayout.Button("打开"))
             {
-                if (isOpenProjectWindowItemOnGUI)
-                    return;
-                EditorApplication.projectWindowItemOnGUI += ProjectWindowItemOnGUI;
-                isOpenProjectWindowItemOnGUI = true;
+                // TreeInfoTipManager.Instance.SwitchTreeInfoTip(true);
+                // if (isOpenProjectWindowItemOnGUI)
+                //     return;
+                // EditorApplication.projectWindowItemOnGUI += ProjectWindowItemOnGUI;
+                // isOpenProjectWindowItemOnGUI = true;
             }
             if (GUILayout.Button("关闭"))
             {
-                EditorApplication.projectWindowItemOnGUI -= ProjectWindowItemOnGUI;
-                isOpenProjectWindowItemOnGUI = false;
+                // TreeInfoTipManager.Instance.SwitchTreeInfoTip(false);
+                // EditorApplication.projectWindowItemOnGUI -= ProjectWindowItemOnGUI;
+                // isOpenProjectWindowItemOnGUI = false;
             }
             if (GUILayout.Button("测试"))
             {
@@ -56,57 +59,45 @@ namespace TreeInfoTip
             }
         }
 
+        private Dictionary<string, string> Guid2Title = new Dictionary<string, string>();
         private float _column = 5.0f; 
         private GUIStyle _style;
         private Color32 _textColor = new Color32(255, 0, 0, 200);
         private void ProjectWindowItemOnGUI(string guid, Rect selectionRect)
         {
-            var path = AssetDatabase.GUIDToAssetPath(guid);
-            if (0 >= path.Length)
-                return;
-
-            string nameRaw;
-            var attr = File.GetAttributes(path);
-            if (((attr & FileAttributes.Directory) == FileAttributes.Directory) && path.Contains("."))
+            string message = "123456";
+            // if (Guid2Title.TryGetValue(guid, out string message))
             {
-                string[] arrays = path.Split('/');
-                nameRaw = arrays[arrays.Length - 1];
-            }
-            else
-            {
-                nameRaw = Path.GetFileNameWithoutExtension(path);
-            }
+                var path = AssetDatabase.GUIDToAssetPath(guid);
+                if (0 >= path.Length)
+                    return;
 
-            string message = "文本内容文本内容文本内容文本内容";
-            if (_style is null)
-            {
-                _style = new GUIStyle(EditorStyles.label);
-            }
+                string nameRaw;
+                var attr = File.GetAttributes(path);
+                if (((attr & FileAttributes.Directory) == FileAttributes.Directory) && path.Contains("."))
+                {
+                    string[] arrays = path.Split('/');
+                    nameRaw = arrays[arrays.Length - 1];
+                }
+                else
+                {
+                    nameRaw = Path.GetFileNameWithoutExtension(path);
+                }
 
-            _style.normal.textColor = new Color32(255, 0, 0, 200);
-            var extSize = _style.CalcSize(new GUIContent(message));
-            var nameSize = _style.CalcSize(new GUIContent(nameRaw));
-            selectionRect.x += nameSize.x + (IsSingleColumnView ? 15 : 18) + _column;
-            selectionRect.width = nameSize.x + 1 + extSize.x;
+                if (_style is null)
+                {
+                    _style = new GUIStyle(EditorStyles.label);
+                }
+
+                _style.normal.textColor = new Color32(255, 0, 0, 200);
+                var extSize = _style.CalcSize(new GUIContent(message));
+                var nameSize = _style.CalcSize(new GUIContent(nameRaw));
+                selectionRect.x += nameSize.x + (IsSingleColumnView ? 15 : 18) + _column;
+                selectionRect.width = nameSize.x + 1 + extSize.x;
             
-            var offsetRect = new Rect(selectionRect.position, selectionRect.size);
-            EditorGUI.LabelField(offsetRect, message, _style);
-            
-            //
-            // var centeredStyle = GUI.skin.GetStyle("Label");
-            // centeredStyle.alignment = TextAnchor.MiddleRight;
-            // centeredStyle.padding.right = 0;
-            // GUI.Label(rect, message, centeredStyle);
-            // EditorApplication.RepaintProjectWindow();
-            
-            // if (Guid2Count.TryGetValue(guid, out var count))
-            // {
-            //     var centeredStyle = GUI.skin.GetStyle("Label");
-            //     centeredStyle.alignment = TextAnchor.MiddleRight;
-            //     centeredStyle.padding.right = 5;
-            //     GUI.Label(rect, count.ToString(), centeredStyle);
-            //     EditorApplication.RepaintProjectWindow();
-            // }
+                var offsetRect = new Rect(selectionRect.position, selectionRect.size);
+                EditorGUI.LabelField(offsetRect, message, _style);
+            }
         }
 
         private static bool IsSingleColumnView {
@@ -136,15 +127,6 @@ namespace TreeInfoTip
             return default(EditorWindow);
         }
         
-        private void OnEnable()
-        {
-            
-        }
-
-        private void OnDisable()
-        {
-            
-        }
     }
 }
 
