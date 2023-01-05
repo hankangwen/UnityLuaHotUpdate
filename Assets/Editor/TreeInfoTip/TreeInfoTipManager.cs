@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Xml;
 using UnityEditor;
 using UnityEngine;
@@ -33,20 +34,21 @@ namespace TreeInfoTip
             }
         }
 
-        private readonly string GUID = "guid";
+        private readonly string PATH = "path";
         private readonly string TITLE = "title";
+        private readonly string GUID = "guid";
 
-        public bool AddToGuid2Title(string guid, string title)
+        public bool AddToGuid2Title(string guid, string title, string path)
         {
             if (_guid2Title.ContainsKey(guid))
             {
                 _guid2Title[guid] = title;
-                UpdateDirectoryV2(guid, title);
+                UpdateDirectoryV2(guid, title, path);
             }
             else
             {
                 _guid2Title.Add(guid, title);
-                AddDirectoryV2(guid, title);
+                AddDirectoryV2(guid, title, path);
             }
 
             return true;
@@ -61,33 +63,34 @@ namespace TreeInfoTip
             return String.Empty;
         }
 
-        private bool AddDirectoryV2(string guid, string title)
+        private bool AddDirectoryV2(string guid, string title, string path)
         {
-            string path = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
+            string xmlPath = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
             var xmlDoc = new XmlDocument();
-            xmlDoc.Load(path);
+            xmlDoc.Load(xmlPath);
 
             var root = xmlDoc.DocumentElement;
             
             var element = xmlDoc.CreateElement("tree");
-            element.SetAttribute(GUID, guid);
+            element.SetAttribute(PATH, path);
             element.SetAttribute(TITLE, title);
+            element.SetAttribute(GUID, guid);
             root.AppendChild(element);
             // TODO:将指定的节点紧接着插入指定的引用节点之后
             // root.InsertAfter(element, element);
             
-            xmlDoc.Save(path);
+            xmlDoc.Save(xmlPath);
             
             AssetDatabase.Refresh();
             return true;
         }
         
         //替换
-        private bool UpdateDirectoryV2(string guid, string title)
+        private bool UpdateDirectoryV2(string guid, string title, string path)
         {
-            string path = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
+            string xmlPath = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
             var xmlDoc = new XmlDocument();
-            xmlDoc.Load(path);
+            xmlDoc.Load(xmlPath);
             
             var treeNodes = xmlDoc.SelectNodes("trees/tree");
             if (treeNodes != null)
@@ -100,12 +103,13 @@ namespace TreeInfoTip
 
                     if (element.GetAttribute(GUID) == guid)
                     {
+                        element.SetAttribute(PATH, path);
                         element.SetAttribute(TITLE, title);
                         break;
                     }
                 }
             }
-            xmlDoc.Save(path);
+            xmlDoc.Save(xmlPath);
             AssetDatabase.Refresh();
             return true;
         }
@@ -113,11 +117,11 @@ namespace TreeInfoTip
         //创建
         private void CreateGuid2Title()
         {
-            Debug.Log("CreateGuid2Title()");
-            string path = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
+            string xmlPath = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
             var xmlDoc = new XmlDocument();
-            xmlDoc.Load(path);
-            
+            xmlDoc.Load(xmlPath);
+
+            bool isModify = false;
             var treeNodes = xmlDoc.SelectNodes("trees/tree");
             if (treeNodes != null)
             {
@@ -131,7 +135,38 @@ namespace TreeInfoTip
                     string guid = element.GetAttribute(GUID);
                     string title = element.GetAttribute(TITLE);
                     _guid2Title.Add(guid, title);
+
+                    string path = element.GetAttribute(PATH);
+                    string guid2Path = AssetDatabase.GUIDToAssetPath(guid);
+                    if (path != guid2Path)
+                    {
+                        isModify = true;
+                        element.SetAttribute(PATH, guid2Path);
+                    }
+
+                    //TODO KERVEN:Check file is exists.
+                    // bool isDirectory = (File.GetAttributes(guid2Path) & FileAttributes.Directory) == FileAttributes.Directory;
+                    // bool isExists = false;
+                    // if (isDirectory)
+                    // {
+                    //     isExists = Directory.Exists(guid2Path);
+                    // }
+                    // else
+                    // {
+                    //     isExists = File.Exists(guid2Path);
+                    // }
+                    //
+                    // if (!isExists)
+                    // {
+                    //     Debug.LogError($"File is delete, path = {guid2Path}");
+                    // }
                 }
+            }
+
+            if (isModify)
+            {
+                xmlDoc.Save(xmlPath);
+                AssetDatabase.Refresh();
             }
         }
     }

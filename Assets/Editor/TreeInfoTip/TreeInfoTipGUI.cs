@@ -29,15 +29,27 @@ namespace TreeInfoTip
                 if (0 >= path.Length)
                     return;
 
+                bool isDirectory = (File.GetAttributes(path) & FileAttributes.Directory) == FileAttributes.Directory;
+
                 string nameRaw;
-                var attr = File.GetAttributes(path);
-                if (((attr & FileAttributes.Directory) == FileAttributes.Directory) && path.Contains("."))
+                if (isDirectory && path.Contains("."))
                 {
+                    if(!Directory.Exists(path)) return;
+                    
                     string[] arrays = path.Split('/');
                     nameRaw = arrays[arrays.Length - 1];
                 }
                 else
                 {
+                    if (isDirectory)
+                    {
+                        if(!Directory.Exists(path)) return;
+                    }
+                    else
+                    {
+                        if(!File.Exists(path)) return;
+                    }
+                    
                     nameRaw = Path.GetFileNameWithoutExtension(path);
                 }
 

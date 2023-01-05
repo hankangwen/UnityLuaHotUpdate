@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <trees>
-  <tree guid="09417d263b36c404dacbf8da14d68a1a" title="程序员代码面试指南by左程云" />
-  <tree guid="1f8f12a57955dba4988e152c8e3f7246" title="第一章" />
-  <tree guid="d9f4a1765020ccc47a60ad7bd5dc8289" title="gdsfdd" />
-  <tree guid="cbea85053b739d14897b492e9306406f" title="更改刚刚" />
-  <tree guid="bca23174dce23564c87a92c47791dbca" title="修改" />
+  <tree path="Assets/Editor/BuildTool/VersionGUI.cs" title="版本GUI" guid="09417d263b36c404dacbf8da14d68a1a" />
+  <tree path="Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" title="LuaLog重定向" guid="5ddb06868e9099747835c892024fd916" />
+  <tree path="Assets/Editor/Custom/EditorDeveloperMode.cs" title="编辑器开发者模式" guid="b54d25ba7d95d5545848f4a72647951a" />
 </trees>

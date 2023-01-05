@@ -12,13 +12,13 @@ namespace TreeInfoTip
     /// </summary>
     public class TreeInfoTipAddText : EditorWindow
     {
-        [MenuItem("Assets/TreeInfoTip/AddText", true)]
+        [MenuItem("Assets/TreeInfoTip/AddText %#D", true)]
         static bool ValidateShowTreeInfoTipAddText()
         {
             return Selection.objects.Length == 1;
         }
 
-        [MenuItem("Assets/TreeInfoTip/AddText", priority = 1000)]
+        [MenuItem("Assets/TreeInfoTip/AddText %#D", priority = 1000)]
         static void ShowTreeInfoTipAddText()
         {
             GetWindow<TreeInfoTipAddText>("What Needs To Be Description?").Show();
@@ -45,7 +45,7 @@ namespace TreeInfoTip
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("确定"))
             {
-                TreeInfoTipManager.Instance.AddToGuid2Title(_guid, _inputStr);
+                TreeInfoTipManager.Instance.AddToGuid2Title(_guid, _inputStr, _selectFilePath);
             }
             if (GUILayout.Button("取消"))
             {

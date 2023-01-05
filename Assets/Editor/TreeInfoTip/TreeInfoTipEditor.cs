@@ -18,7 +18,7 @@ namespace TreeInfoTip
             GetWindow<TreeInfoTipEditor>("项目目录树添加备注信息").Show();
         }
 
-        private bool isOpenProjectWindowItemOnGUI = false;
+        // private bool isOpenProjectWindowItemOnGUI = false;
         private void OnGUI()
         {
             if (GUILayout.Button("打开"))
