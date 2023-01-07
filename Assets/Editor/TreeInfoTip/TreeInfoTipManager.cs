@@ -1,3 +1,10 @@
+/********************************************************************
+	Created: 2023/01/07
+	License Copyright (c) hankangwen
+	Author: hankangwen(hankangwen@qq.com)
+	Github: https://github.com/hankangwen/Unity-TreeInfoTip
+*********************************************************************/
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -20,6 +27,32 @@ namespace TreeInfoTip
                 return _instance;
             }
         }
+
+        #region DirectoryV2
+        private TreeInfoTipManager()
+        {
+            _directoryV2Path = EditorPrefs.GetString(_directoryV2SaveKey, _directoryV2Path);
+        }
+
+        private string _directoryV2SaveKey = "TreeInfoTip_DirectoryV2";
+        private string _directoryV2Path = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
+        public string DirectoryV2Path
+        {
+            get => _directoryV2Path;
+            set
+            {
+                if (!File.Exists(value))
+                {
+                    Debug.LogError($"Can not find file {value}, please check again.");
+                    return;
+                }
+                _directoryV2Path = value;
+                EditorPrefs.SetString(_directoryV2SaveKey, _directoryV2Path);
+                _guid2Title = null;
+            }
+        }
+        #endregion
+        
         
         public bool IsOpen = true;  //是否开启TreeInfoTip
         
@@ -65,7 +98,7 @@ namespace TreeInfoTip
 
         private bool AddDirectoryV2(string guid, string title, string path)
         {
-            string xmlPath = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
+            string xmlPath = DirectoryV2Path;
             var xmlDoc = new XmlDocument();
             xmlDoc.Load(xmlPath);
 
@@ -88,7 +121,7 @@ namespace TreeInfoTip
         //替换
         private bool UpdateDirectoryV2(string guid, string title, string path)
         {
-            string xmlPath = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
+            string xmlPath = DirectoryV2Path;
             var xmlDoc = new XmlDocument();
             xmlDoc.Load(xmlPath);
             
@@ -117,7 +150,7 @@ namespace TreeInfoTip
         //创建
         private void CreateGuid2Title()
         {
-            string xmlPath = Application.dataPath + "/Editor/TreeInfoTip/DirectoryV2.xml";
+            string xmlPath = DirectoryV2Path;
             var xmlDoc = new XmlDocument();
             xmlDoc.Load(xmlPath);
 

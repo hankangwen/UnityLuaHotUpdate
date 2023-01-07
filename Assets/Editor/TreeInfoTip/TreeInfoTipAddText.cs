@@ -1,3 +1,10 @@
+/********************************************************************
+	Created: 2023/01/07
+	License Copyright (c) hankangwen
+	Author: hankangwen(hankangwen@qq.com)
+	Github: https://github.com/hankangwen/Unity-TreeInfoTip
+*********************************************************************/
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,9 +14,6 @@ using Object = UnityEngine.Object;
 
 namespace TreeInfoTip
 {
-    /// <summary>
-    /// 为Project窗口的项目目录树添加备注信息
-    /// </summary>
     public class TreeInfoTipAddText : EditorWindow
     {
         [MenuItem("Assets/TreeInfoTip/AddText %#D", true)]
@@ -18,7 +22,7 @@ namespace TreeInfoTip
             return Selection.objects.Length == 1;
         }
 
-        [MenuItem("Assets/TreeInfoTip/AddText %#D", priority = 1000)]
+        [MenuItem("Assets/TreeInfoTip/AddText %#D", priority = 1001)]
         static void ShowTreeInfoTipAddText()
         {
             GetWindow<TreeInfoTipAddText>("What Needs To Be Description?").Show();

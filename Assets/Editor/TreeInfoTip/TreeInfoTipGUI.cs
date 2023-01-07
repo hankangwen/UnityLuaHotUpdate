@@ -1,3 +1,10 @@
+/********************************************************************
+	Created: 2023/01/07
+	License Copyright (c) hankangwen
+	Author: hankangwen(hankangwen@qq.com)
+	Github: https://github.com/hankangwen/Unity-TreeInfoTip
+*********************************************************************/
+
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
