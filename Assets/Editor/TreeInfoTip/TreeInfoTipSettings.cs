@@ -9,7 +9,6 @@ using System;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
-using TextAsset = UnityEngine.TextCore.Text.TextAsset;
 
 namespace TreeInfoTip
 {
