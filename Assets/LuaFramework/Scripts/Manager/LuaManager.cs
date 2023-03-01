@@ -46,7 +46,10 @@ namespace LuaFramework {
         void StartMain() {
 #if UNITY_EDITOR
             ConnectEmmyLua();
+            RemoteCnt();
             // ListenEmmyLua();
+#else
+            RemoteCnt();
 #endif
             
             lua.DoFile("Main.lua");
@@ -57,6 +60,17 @@ namespace LuaFramework {
             main = null;
         }
 
+        public void RemoteCnt()
+        {
+            string str =
+                @"                    
+                    package.cpath = package.cpath .. ';C:/Users/king/AppData/Roaming/JetBrains/Rider2021.2/plugins/EmmyLua/debugger/emmy/windows/x64/?.dll'
+                    local dbg = require('emmy_core')
+                    dbg.tcpConnect('10.11.176.185', 80)                              
+                ";
+            lua.DoString(str, "LuaManager.cs");
+        }
+        
 #if UNITY_EDITOR
         public void ConnectEmmyLua()
         {

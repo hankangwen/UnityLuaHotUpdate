@@ -700,7 +700,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     1: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1
     4: ASYNC_MODE
-    7: ASYNC_MODE;ODIN_INSPECTOR;ODIN_INSPECTOR_3
+    7: ASYNC_MODE;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1
   additionalCompilerArguments: {}
   platformArchitecture:
     iOS: 0

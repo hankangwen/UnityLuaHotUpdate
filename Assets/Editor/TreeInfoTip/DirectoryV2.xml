@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<trees>
-  <tree path="Assets/Editor/BuildTool/VersionGUI.cs" title="版本GUI" guid="09417d263b36c404dacbf8da14d68a1a" />
-  <tree path="Assets/Editor/Custom/LuaLogRedirect/LuaLogRedirect.cs" title="LuaLog重定向" guid="5ddb06868e9099747835c892024fd916" />
-  <tree path="Assets/Editor/Custom/EditorDeveloperMode.cs" title="编辑器开发者模式" guid="b54d25ba7d95d5545848f4a72647951a" />
-</trees>
